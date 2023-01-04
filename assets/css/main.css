@@ -65,7 +65,7 @@ svg,img { max-width: 100%; height: auto; }
 .ds-numbervalulist li:last-child{ margin-right: 0; }
 .ds-numbervalulist strong{ display: block; color: var(--theme-color); font-size: 36px; font-weight: 800; }
 .ds-numbervalulist span{ font-size: 16px; letter-spacing: 1px; }
-.name { font-weight: 600; font-size: 48px; line-height: 60px; color: var(--primary-color); }
+.name { font-weight: 600; font-size: 40px; line-height: 60px; color: var(--primary-color); }
 /*-----------------------------------------------------------------
   3. >>> About Style
 ----------------------------------------------------------------*/
