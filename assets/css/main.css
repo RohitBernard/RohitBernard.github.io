@@ -48,7 +48,7 @@ svg,img { max-width: 100%; height: auto; }
 .ds-logo{ text-transform: uppercase; font-size: 18px; letter-spacing: 3px; color: var(--primary-color); display: flex; align-items: center; }
 .ds-logo span{ display:flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: var(--primary-color); border-radius: 4px; color: var(--bg-color); font-size: 22px; font-weight: 600; text-align: center; margin-right: 12px; }
 .ds-logo:hover{ color: var(--theme-color); }
-
+.ds-contact{ text-transform: uppercase; font-size: 14px; letter-spacing: 2px; color: var(--primary-color); display: flex; align-items: center; }
 .ds-social{ list-style: none; display: flex; align-items: center; flex-wrap: wrap; }
 .ds-social li{ margin-left: 12px; }
 .ds-social li:first-child{ margin-left: 0; }
@@ -133,7 +133,7 @@ span.ds-department{ color: var(--secondary-color); font-weight: 500; font-size: 
 .ds-contact-info{ margin-bottom: 40px; margin-top:40px;}
 .ds-contact-info a{ color: var(--bg-color); letter-spacing: 1px; font-size: 16px; }
 .ds-contact-info a:hover{ color: var(--theme-color); letter-spacing: 1px; font-size: 16px; }
-.ds-copyright{ color: rgba(255,255,255,0.5); letter-spacing: 1px; font-size: 16px; }
+.ds-copyright{ color: rgba(255,255,255,0.5); letter-spacing: 1px; font-size: 8px; }
 .ds-copyright a{color: rgba(255,255,255,0.5);}
 .ds-copyright a:hover{ color: var(--theme-color); }
 
