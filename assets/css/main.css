@@ -17,7 +17,13 @@ Theme Name: Jason Stroff
 	--primary-color:#000;
 	--secondary-color:#373737;
 	--bg-color:#FFF;
+	--secondary-bg-color:#F6F8FA;
 	--theme-color:#F26464;
+	/* --primary-color:#FFF;
+	--secondary-color:#C7C7C7;
+	--bg-color:#000;
+	--secondary-bg-color:#202020;
+	--theme-color:#F26464; */
 }
 
 
@@ -102,7 +108,7 @@ span.ds-department{ color: var(--secondary-color); font-weight: 500; font-size: 
   6. >>> Work Style
 ----------------------------------------------------------------*/
 .ds-work-section{ padding-bottom: 80px; }
-.ds-work-list{ padding-left: 70px; padding-top:40px; padding-right: 70px; padding-bottom: 40px; background-color:#F6F8FA; margin-bottom: 40px; }
+.ds-work-list{ padding-left: 70px; padding-top:40px; padding-right: 70px; padding-bottom: 40px; background-color:var(--secondary-bg-color); margin-bottom: 40px; border-radius: 12px; }
 .ds-work-list section{ padding-top: 20px; padding-right: 120px; }
 .ds-work-tilte{ color: var(--primary-color); font-size: 30px; line-height: 36px; font-weight: 600; margin-bottom: 30px; }
 .ds-work-list p{ font-weight: 300; font-size: 18px; line-height: 30px; }
@@ -164,12 +170,13 @@ span.ds-department{ color: var(--secondary-color); font-weight: 500; font-size: 
 	.ds-work-list p{font-size: 15px; line-height: 30px;}
 	.ds-footer{ padding: 60px 10px; }
 	.ds-footer section h4{ font-size: 40px; }
-	.ds-copyright{ font-size: 14px; }
+	.ds-copyright{ font-size: 8px; }
 	.ds-footer section{ padding-bottom: 30px; }
 	.ds-button{ padding: 11px 10px; }
 	.ds-work-details-section{ padding-top: 30px; }
 	.ds-work-det-title{ margin-bottom: 7px; }
 	.ds-work-content-sec h2{ font-size: 20px; }
+	.ds-work-content-sec h3{ font-size: 16px; }
 	.ds-work-content-sec{ padding: 30px 0; }
 	.ds-work-list section{ padding-right: 0; padding-bottom: 30px; }
 }
