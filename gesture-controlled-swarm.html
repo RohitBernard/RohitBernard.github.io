@@ -16,9 +16,9 @@
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <!-- Main CSS -->
       <link href="assets/css/main.css" rel="stylesheet">
+      <link rel="icon" href="assets/images/icon.png" type="image/png">
 
-
-    <title>Rohit Bernard</title>
+    <title>Gesture Controlled Swarm</title>
   </head>
   <body>
    
@@ -78,7 +78,7 @@
                               used to recognize user gestures which can be assigned to various tasks such as activating and 
                               deactivating the rendering.
                               
-                              The project is built upon USC ACT lab's <a href="https://crazyswarm.readthedocs.io/en/latest/">Crazyswarm</a> which defines a Python API to track and control a 
+                              The project is built upon USC ACT lab's <a href="https://crazyswarm.readthedocs.io/en/latest/" target="_blank">Crazyswarm</a> which defines a Python API to track and control a 
                               swarm of Crazyflie 2.0 miniature quadcopters.
                             </p>
 
@@ -95,7 +95,7 @@
                             </p>
 
                             <figure>
-                              <img src="assets/images/control object.png">
+                              <img src="assets/images/gcs/control object.png">
                               <figcaption>Control Object placed on user's wrist</figcaption>
                             </figure>
 
@@ -127,9 +127,12 @@
                             </p>
 
                             <p>
-                              <span class="math display">$$\begin{gathered}
-                                C: roll&lt;-30^{\circ} \rightarrow roll&gt;30^{\circ} 
+                              <span class="math display">
+                                $$\begin{gathered}
+                                \begin{split}
+                                C: roll&lt;-30^{\circ} \rightarrow roll&gt;30^{\circ} \\
                                 \rightarrow roll&lt;-30^{\circ} \rightarrow roll&gt;30^{\circ}    
+                                \end{split}
                                 \end{gathered}$$
                               </span>
                             </p>
@@ -140,7 +143,7 @@
                             </p>
 
                             <figure>
-                              <img src="assets/images/automaton.jpg">
+                              <img src="assets/images/gcs/automaton.jpg">
                               <figcaption>
                                 Timed automaton for "Hand wave" gesture recognition where, c is clock variable, T is 
                                 max wait time, n is count of gestures recognised, roll is the roll angle of the control 
@@ -148,7 +151,7 @@
                               </figcaption>
                             </figure>
 
-                            <h3>Results</h3>
+                            <h2>Results</h2>
 
                             <p>
                               In this project, we were able to render a simple 3D point cloud consisting of 3 points in the 
@@ -159,12 +162,12 @@
                               gesture again, the drones land at their current positions.
                             </p>
 
-                            <h3>Resources</h3>
+                            <h2>Resources</h2>
 
                             <p>
                               Recorded demonstrations of the project can be viewed at 
-                              <a href="https://youtube.com/playlist?list=PL0oGKsdjbdS1L4rbGDTgV4AER0Ae60Gnu">this YouTube Playlist</a>. 
-                              The code is available at my <a href="https://github.com/RohitBernard/crazyswarm">GitHub repo</a>.
+                              <a href="https://youtube.com/playlist?list=PL0oGKsdjbdS1L4rbGDTgV4AER0Ae60Gnu" target="_blank">this YouTube Playlist</a>. 
+                              The code is available at my <a href="https://github.com/RohitBernard/crazyswarm" target="_blank">GitHub repo</a>.
                             </p>
 
                           </div>

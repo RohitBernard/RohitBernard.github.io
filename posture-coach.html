@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Google Fots -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <!-- Remixicon Icon -->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <!-- Remixicon Icon -->
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- Main CSS -->
+      <link href="assets/css/main.css" rel="stylesheet">
+      <link rel="icon" href="assets/images/icon.png" type="image/png">
+
+    <title>Posture Coach</title>
+  </head>
+  <body>
+   
+    <!-- header -->
+    <header class="ds-header" id="site-header">
+      <div class="container">
+          <div class="ds-header-inner">
+            <!-- logo -->
+            <a href="index.html" class="ds-logo">
+              <span>RB</span>Rohit Bernard
+            </a>
+            <!-- logo -->
+            <!-- social -->
+            <!-- <div style="display: flex;  ">
+              <a href="#bottom" class="ds-contact" style="margin-right: 12px;">
+                Contact Me
+              </a> -->
+            <ul class="ds-social">
+              <li><a href="tel:213-551-4359" target="_blank"><i class="ri-phone-fill"></i></a></li>
+              <li><a href="mailto:bernard.rohit@gmail.com" target="_blank"><i class="ri-mail-fill"></i></a></li>
+              <li><a href="https://github.com/RohitBernard" target="_blank"><i class="ri-github-fill"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/rohit-bernard/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+            </ul>
+            <!-- </div> -->
+            <!-- social -->
+          </div>
+      </div>
+  </header>
+    <!-- header -->
+   
+   <main class="ds-main-section">
+     <div class="container">
+        <div class="ds-work-details-section">
+            <div class="text-center">
+              <a href="index.html" class="ds-button ds-arrow-button"><i class="ri-arrow-left-s-line"></i> BAck</a>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                  <header class="ds-work-det-hed">
+                      <h1 class="ds-work-det-title">Posture Coach</h1>
+                      <span class="ds-work-det-dep">Final Year Project, August 2020 - May 2021</span>
+                  </header>
+                  <figure>
+                    <img src="assets/images/posture coach/bicepCurl.png" style="width: 24%;">
+                    <img src="assets/images/posture coach/shoulderPress.jpeg" style="width: 24%;">
+                    <img src="assets/images/posture coach/frontRaise.jpeg" style="width: 24%;">
+                    <img src="assets/images/posture coach/squats.jpeg" style="width: 24%;">
+                </figure>
+                  <div class="ds-work-content-sec">
+                      <div class="row justify-content-center">
+                          <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                            <p>
+                                Posture Coach is a group final-year capstone project for the Bachelor's of Engineering in 
+                                Computer Science at Dayananda Sagar College of Engineering
+                            </p>  
+                            
+                            <h2>TL;DR</h2>
+
+                            <p>
+                                Posture Coach is a cross platform mobile application that aims to help prevent injuries and improve 
+                                the quality of people’s workouts with just a smartphone, that uses the system’s inbuilt camera to 
+                                detect the user’s exercise pose and provide personalized, detailed recommendations on how the user 
+                                can improve their form in real time.
+                            </p>
+
+                            <h2>The Inspiration</h2>
+
+                            <p>
+                                Fitness is a vital component of our health and well-being. Due to the circumstances caused by the 
+                                covid-19 pandemic, most people do not have access to a gym or fitness equipment; hence many people 
+                                have resorted to exercising by themselves at home. People have become dependent on technology to 
+                                receive appropriate fitness guidance and training.
+                            </p>
+
+                            <p>
+                                Since most gyms have been closed, people have now resorted to working out at their homes instead. 
+                                Exercises such as squats, deadlifts, and shoulder presses are beneficial to health and fitness, 
+                                but they can also be very dangerous if performed incorrectly.
+                                Most people need guidance to maintain the correct posture while exercising. Technology can be used 
+                                to monitor and provide this guidance by making use of Pose Estimation.
+                            </p>
+
+                            <h2>Design and Implementation</h2>
+
+                            <figure>
+                                <img src="assets/images/posture coach/SystemBlockDiag.png">
+                                <figcaption>Block Diagram of the Application</figcaption>
+                            </figure>
+
+                            <h3>Pose Estimation</h3>
+
+                            <p>
+                                The PoseNet algorithm is a pre-trained model for pose estimation. It is available on TensorFlow 
+                                lite and TensorFlow.JS libraries, which makes it easier to be implemented on mobile device 
+                                applications. It is designed to run on mobile devices and browsers. It takes a processed camera 
+                                image as the input and then generates 17 key points of body parts along with their confidence 
+                                score between 0.0 and 1.0.
+                            </p>
+
+                            <h3>Keypoint Normalization</h3>
+
+                            <p>
+                                We must create our own parser to use the raw keypoint data after executing pose estimation. We 
+                                also need to generalise our software to cater for individuals with various body length measurements, 
+                                camera distance, and other related aspects. We normalise the pose based on the torso's length in 
+                                pixels to accommodate for these variances. The average distance between the neck keypoint and the 
+                                right and left hip keypoints is used to compute torso length. Distances are thus expressed as 
+                                ratios of torso length
+                            </p>
+
+                            <h3>Perspective Detection</h3>
+
+                            <p>
+                                We must resolve the ambiguity in the camera viewpoint for some workouts. The bicep curl exercise, 
+                                for example, must be done from the side of the body and can be done with either the left or right 
+                                arm. We need to figure out which arm is doing the work. By analysing which key points are most 
+                                apparent (left or right side keypoints) throughout all frames of the activity, we can determine 
+                                which arm is conducting the exercise in the video. We do this by comparing keypoint confidence 
+                                scores for each side.
+                            </p>
+
+                            <h3>Evaluation</h3>
+
+                            <p>
+                                We perform exercise pose evaluation using a geometric approach. We first determine the metrics 
+                                based on which we must evaluate the user’s posture for each exercise. We compute body vectors 
+                                from key points of interest and use personal training guidelines to design geometric heuristics 
+                                and evaluate the body vectors.
+                            </p>
+
+                            <h3>Feedback</h3>
+
+                            <p>
+                                Our application provides real-time audio and text feedback to the user as they are performing the 
+                                exercise. Using the results of the evaluation, we provide positive reinforcement messages such 
+                                as "Good work", "Well done" for a correctly performed exercise and suggestions on how to improve
+                                posture such as "you should lift your arm higher", or "squat lower" for an incorrectly performed 
+                                exercise.
+                            </p>
+
+                            <figure>
+                                <img src="assets/images/posture coach/NegativeFeedback.png" style="width: 49%;">
+                                <img src="assets/images/posture coach/negativeFeedbackB.png" style="width: 49%;">
+                                <figcaption>Examples of negative feedback</figcaption>
+                            </figure>
+
+                            <h3>Exercises</h3>
+
+                            <p>
+                                Currently, we have implemented the evaluation of 4 exercises - Bicep Curl, Shoulder Press, Front 
+                                Raise, and Squats, as shown above.
+                            </p>
+
+                            <h2>Demo</h2>
+
+                            <div class="iframe-container" style="margin-bottom: 30px;"><iframe class="responsive-iframe" src="https://drive.google.com/file/d/14F5ajf6BsXDYao-ABziUnpTsXbLRfizL/preview" width="640" height="480" allow="autoplay"></iframe></div>
+
+                            <h2>Resources</h2>
+
+                            <p>
+                              The code is available at my <a href="https://github.com/RohitBernard/posture_coach" target="_blank">GitHub repo</a>.
+                            </p>
+
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+     </div>
+   </main>
+
+   <!--  footer -->
+   <footer class="ds-footer text-center" id="bottom">
+    <div class="container">
+       <section>
+         <span>Stay in touch</span>
+         <h4>Ready to talk?</h4>
+         <p>Feel free to contact me:</p>
+         <div class="ds-contact-info">
+           <a href="mailto:bernard.rohit@gmail.com">bernard.rohit@gmail.com</a><br>
+           <a href="mailto:rpbernar@usc.edu">rpbernar@usc.edu</a><br>
+           <a href="tel:213-551-4359">(213)551-4359</a>
+         </div>
+         <a href="mailto:bernard.rohit@gmail.com" class="ds-button">Lets Talk</a>
+       </section>
+       <span class="ds-copyright">© 2022 All rights reserved. Free minimal bootstrap template by <a href="https://designstub.com/" target="_blank">Designstub</a>.</span>
+    </div>
+  </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </body>
+</html>

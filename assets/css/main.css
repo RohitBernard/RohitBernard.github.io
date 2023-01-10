@@ -109,10 +109,10 @@ span.ds-department{ color: var(--secondary-color); font-weight: 500; font-size: 
 .ds-work-list .ds-button{ margin-top: 20px; }
 .iframe-container { position: relative; overflow: hidden; width: 100%; padding-top: 56.25%; }
 .responsive-iframe { position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; }
-.ds-work-det-hed{ padding-top: 42px; padding-bottom: 80px; }
+.ds-work-det-hed{ padding-top: 42px; padding-bottom: 40px; }
 .ds-work-det-title{ font-weight: 600; color:var(--primary-color); font-size: 48px; margin-bottom: 20px; }
 .ds-work-det-dep{ display:block;font-weight: 600; color: var(--primary-color); font-size: 18px; }
-.ds-work-content-sec{ padding: 100px 0; }
+.ds-work-content-sec{ padding: 40px 0; }
 .ds-work-content-sec p{ font-size: 18px; line-height: 36px; margin-bottom: 30px; }
 .ds-work-content-sec h2{ font-size: 30px; font-weight: 700; margin-bottom: 30px; }
 .ds-work-content-sec h3{ font-size: 20px; font-weight: 600; margin-bottom: 15px; }
