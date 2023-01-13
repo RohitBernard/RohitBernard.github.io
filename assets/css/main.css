@@ -110,7 +110,7 @@ span.ds-department{ color: var(--secondary-color); font-weight: 500; font-size: 
 .ds-work-section{ padding-bottom: 80px; }
 .ds-work-list{ padding-left: 70px; padding-top:40px; padding-right: 70px; padding-bottom: 40px; background-color:var(--secondary-bg-color); margin-bottom: 40px; border-radius: 12px; }
 .ds-work-list section{ padding-top: 20px; padding-right: 120px; }
-.ds-work-title{ color: var(--primary-color); font-size: 30px; line-height: 36px; font-weight: 600; margin-bottom: 30px; }
+.ds-work-title{ display:block; color: var(--primary-color); font-size: 30px; line-height: 36px; font-weight: 600; margin-bottom: 30px; }
 .ds-work-title:hover{ color: var(--theme-color) }
 .ds-work-list p{ font-weight: 300; font-size: 18px; line-height: 30px; }
 .ds-work-list .ds-button{ margin-top: 20px; }
