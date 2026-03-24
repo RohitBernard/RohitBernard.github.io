@@ -1,248 +1,180 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Google Fots -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-      <!-- Remixicon Icon -->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-      <!-- Remixicon Icon -->
-      <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-      <!-- Main CSS -->
-      <link href="assets/css/main.css" rel="stylesheet">
-      <link rel="icon" href="assets/images/icon.png" type="image/png">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="icon" href="assets/images/icon.png" type="image/png">
+  <title>Mapping Fires using a Drone Swarm — Rohit Bernard</title>
+</head>
+<body>
 
-    <title>Mapping Fires using a Drone Swarm</title>
-  </head>
-  <body>
-   
-    <!-- header -->
-    <header class="ds-header" id="site-header">
-      <div class="container">
-          <div class="ds-header-inner">
-            <!-- logo -->
-            <a href="index.html" class="ds-logo">
-              <span>RB</span>Rohit Bernard
-            </a>
-            <!-- logo -->
-            <!-- social -->
-            <!-- <div style="display: flex;  ">
-              <a href="#bottom" class="ds-contact" style="margin-right: 12px;">
-                Contact Me
-              </a> -->
-            <ul class="ds-social">
-              <li><a href="tel:213-551-4359" target="_blank"><i class="ri-phone-fill"></i></a></li>
-              <li><a href="mailto:bernard.rohit@gmail.com" target="_blank"><i class="ri-mail-fill"></i></a></li>
-              <li><a href="https://github.com/RohitBernard" target="_blank"><i class="ri-github-fill"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/rohit-bernard/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
-            </ul>
-            <!-- </div> -->
-            <!-- social -->
-          </div>
-      </div>
-  </header>
-    <!-- header -->
-   
-   <main class="ds-main-section">
-     <div class="container">
-        <div class="ds-work-details-section">
-            <div class="text-center">
-              <a href="index.html" class="ds-button ds-arrow-button"><i class="ri-arrow-left-s-line"></i> BAck</a>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
-                  <header class="ds-work-det-hed">
-                      <h1 class="ds-work-det-title">Mapping Fires using a Drone Swarm</h1>
-                      <span class="ds-work-det-dep">Class Project, August - December 2021</span>
-                  </header>
-                  <figure>
-                    <img src="assets/images/csci513/SimPic.jpg">
-                </figure>
-                  <div class="ds-work-content-sec">
-                      <div class="row justify-content-center">
-                          <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
-                            <p>
-                                Mapping Fires using a Drone Swarm is a 2-person group project for the course CSCI 513 - Autonomous
-                                Cyber Physical Systems at USC.
-                            </p>  
-                            
-                            <h2>TL;DR</h2>
-
-                            <p>
-                                Autonomous unmanned aerial vehicles (UAVs) such as drones have the ability to fly over varied 
-                                terrain without requiring human interaction. We explore the use of a swarm of UAVs for fire 
-                                fighting. While a swarm of drones is far too small to help put out a fire, it can be very useful 
-                                in searching for a fire and mapping its extent in real time, giving firefighters on the ground 
-                                crucial information. In this paper, we use a 2D grid-world to demonstrate how a swarm of drones 
-                                can be used to efficiently find and map a spreading fire.
-                            </p>
-
-                            <h2>The Inspiration</h2>
-
-                            <p>
-                                Firefighting is incredibly dangerous and highly time sensitive. Fires can spread quickly, and 
-                                having a real-time layout of the fire would allow for quicker response times and more strategic 
-                                use of firefighting resources. Aerial vehicles are best suited for the task of mapping fires 
-                                since they do not need to navigate through the ground terrain and can see a larger portion of the 
-                                terrain than ground vehicles. However, manually flying a swarm of drones requires skilled 
-                                manpower, and as the swarm size increases, communication and planning become increasingly 
-                                difficult. By making the system autonomous, we can eliminate the need for human interaction, 
-                                and leverage the instant communication between drones to implement more sophisticated and 
-                                efficient mapping algorithms. In this paper, we model the use of a swarm of UAVs to search 
-                                for fire within a given region, map the fire's perimeter, and then continually update its 
-                                mapping as the fire spreads in order to maintain an accurate picture of the fire's perimeter 
-                                in real-time. 
-                            </p>
-
-                            <h2>Demo</h2>
-
-                            <p>
-                                A quick recording of our simulation.
-                            </p>
-                            <div class="iframe-container"><iframe class="responsive-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/mK3SZqt2rj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-                            
-                            <p>
-                                Perimeter coverage is highly dependent on the number of drones being used. If we do not have enough 
-                                drones, perimeter updates can be slow and we can see a greater difference between the new and old 
-                                boundaries.
-                            </p>
-                            <div class="iframe-container"><iframe class="responsive-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/D_sKyF3Gnh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-                            
-                            <h2>Design and Implementation</h2>
-
-                            <h3>Environment</h3>
-
-                            <p>
-                                The simulation environment is a 2-dimensional grid-world representing an area of land as viewed 
-                                from above. Each square contains labels that describe whether it is on fire and whether there is 
-                                a drone above it. We use a simple ellipse model for the spread of the fire, which always remains 
-                                contiguous. We model the spread of fire given a particular wind speed, making the assumption that 
-                                the terrain is flat. The direction of wind is always assumed to be from south to north, although 
-                                this does not bias our results since the drones' initial positions are set to random locations on 
-                                the edge of the grid-world. In a real-life version of this system, we assume that the drones 
-                                would be equipped with downward facing infrared cameras to detect the presence of fire. In our 
-                                model, we simulate this by allowing each drone to perceive the contents of 9 grid boxes - the 
-                                one it is currently above, and all grid boxes either adjacent or diagonally adjacent to it. 
-                            </p>
-
-                            <h3>Simulation</h3>
-
-                            <p>
-                                Each simulation begins with some number of contiguous grid squares already on fire. When the 
-                                drones spawn, they are provided with a bounding box known to contain fire, and their first task 
-                                is to find the fire within that box. As soon as the fire is detected by some drone, the system 
-                                enters a mapping stage, where the remaining drones move to the position where the fire was first 
-                                detected, and then proceed to navigate around the fire in order to map its perimeter. The drones 
-                                continuously update their mapping as the fire spreads until the simulation is terminated.
-                            </p>
-
-                            <h3>Fire Model</h3>
-
-                            <p>
-                                The shape and rate of spread (ROS) of a fire is dependent on many factors, including environment 
-                                temperature, type and distribution of burning materials (i.e. ``fuel"), wind speed and direction, 
-                                and slope of terrain. Simpler models of fire from the literature often assume a flat terrain with 
-                                a single source of wind and uniform fuel. With the wind as the driving factor for fire spread, 
-                                the spread of fire is typically modeled as an ellipse whose eccentricity is determined by the 
-                                speed of the wind; the stronger the wind, the greater the eccentricity.
-                            </p>
-
-                            <h3>Algorithm</h3>
-
-                            <p>
-                                Our autonomous drone swarm uses a centralized system, where each drone can communicate freely 
-                                to a central controller, which provides instructions to the drones to achieve coordination. 
-                                Each individual drone uses logic of its own to tackle problems corresponding to itself, and the 
-                                centralized controller performs the higher level planning of the swarm.
-                            </p>
-
-                            <h2>Metrics</h2>
-
-                            <p>
-                                "Percent Perimeter Detected" represents the percentage of the fire's actual perimeter currently 
-                                detected by the drones. "Percent Perimeter Detected (soft)" incorporates some flexibility into 
-                                the perimeter coverage metric; when checking whether the drone detected a certain fire on the 
-                                perimeter, the drone also counts as having detected that fire if it detected some other fire 
-                                adjacent to it. The "Drone Efficiencies" metric maps the ID of each drone to the percentage of 
-                                the total fires discovered that was discovered by that drone. Generally, we assume that the 
-                                closer the efficiency values are to each other, the better, since this implies that the work 
-                                is being spread out more equally among the drones and that drones are not being put to waste. 
-                                Finally, the "ROS Estimate" gives the drone-estimated rate of spread (in km/h) at the right 
-                                flank, left flank, head, and rear of the fire. It is calculated by comparing the positions of 
-                                the rightmost, leftmost, uppermost, and lowermost squares that are on fire (from the drones' 
-                                perspective) 30 minutes apart. The "Actual ROS" is calculated the same way, but using the the 
-                                ground truth's values for those reference points instead of the drones'.
-                            </p>
-
-                            <h2>Results</h2>
-
-                            <p>
-                                We also looked at the relationship between the number of drones and the average standard 
-                                deviation in drone efficiencies during a simulation, and found that the greater the number of 
-                                drones, the smaller the average standard deviation in efficiency. This was slightly surprising, 
-                                since we thought that increasing the number of drones might make it more likely that some drones 
-                                would follow too closely behind others, leading to poor efficiency. It may mean we need to tweak 
-                                our path-planning algorithm to work better with lower numbers of drones. 
-                            </p>
-
-                            <figure>
-                                <img src="assets/images/csci513/graph1.png">
-                                <img src="assets/images/csci513/graph2.png">
-                                <img src="assets/images/csci513/avg_se.jpg">
-                            </figure>
-
-                            <h2>Resources</h2>
-
-                            <p>
-                              The code is available at this <a href="https://colab.research.google.com/drive/1yr52nDKw7F2WWl8TGV_VeZI8IRUqRAZ1?usp=sharing" target="_blank">Colab notebook</a>.
-                            </p>
-
-
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-     </div>
-   </main>
-
-   <!--  footer -->
-   <footer class="ds-footer text-center" id="bottom">
+  <!-- Header -->
+  <header class="ds-header" id="site-header">
     <div class="container">
-       <section>
-         <span>Stay in touch</span>
-         <h4>Ready to talk?</h4>
-         <p>Feel free to contact me:</p>
-         <div class="ds-contact-info">
-           <a href="mailto:bernard.rohit@gmail.com">bernard.rohit@gmail.com</a><br>
-           <a href="mailto:rpbernar@usc.edu">rpbernar@usc.edu</a><br>
-           <a href="tel:213-551-4359">(213)551-4359</a>
-         </div>
-         <a href="mailto:bernard.rohit@gmail.com" class="ds-button">Lets Talk</a>
-       </section>
-       <span class="ds-copyright">© 2022 All rights reserved. Free minimal bootstrap template by <a href="https://designstub.com/" target="_blank">Designstub</a>.</span>
+      <div class="ds-header-inner">
+        <a href="index.html" class="ds-logo">
+          <span class="ds-logo-mark">RB</span>
+          Rohit Bernard
+        </a>
+        <div class="ds-header-actions">
+          <nav class="ds-nav-social">
+            <a href="tel:213-551-4359" aria-label="Phone"><i class="ri-phone-fill"></i></a>
+            <a href="mailto:bernard.rohit@gmail.com" aria-label="Email"><i class="ri-mail-fill"></i></a>
+            <a href="https://github.com/RohitBernard" target="_blank" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/rohit-bernard/" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+          </nav>
+          <button class="ds-mode-toggle" id="ds-mode-toggle" aria-label="Toggle theme"><i class="ri-sun-line"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="ds-main-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+
+          <a href="index.html" class="ds-back-btn"><i class="ri-arrow-left-s-line" aria-hidden="true"></i> <span>Back</span></a>
+
+          <span class="ds-detail-meta">Class Project · August – December 2021</span>
+          <h1 class="ds-detail-title">Mapping Fires using a Drone Swarm</h1>
+
+          <figure>
+            <img src="assets/images/csci513/SimPic.jpg" alt="Simulation screenshot">
+          </figure>
+
+          <p>
+            Mapping Fires using a Drone Swarm is a 2-person group project for the course CSCI 513 – Autonomous
+            Cyber Physical Systems at USC.
+          </p>
+
+          <h2>TL;DR</h2>
+          <p>
+            Autonomous UAVs can fly over varied terrain without human interaction. We explore using a swarm of
+            UAVs for firefighting support. While too small to extinguish fires, a swarm can efficiently search
+            for a fire and map its extent in real time, giving firefighters crucial ground intelligence. We
+            use a 2D grid-world to demonstrate how a swarm of drones can find and map a spreading fire.
+          </p>
+
+          <h2>The Inspiration</h2>
+          <p>
+            Firefighting is incredibly dangerous and time sensitive. Fires spread quickly, and a real-time layout
+            of the fire enables quicker response and more strategic use of resources. Aerial vehicles are best
+            suited for mapping fires since they need not navigate ground terrain and can observe larger areas.
+            By making the system autonomous, we eliminate the need for skilled human operators and leverage
+            instant drone-to-drone communication for sophisticated mapping algorithms.
+          </p>
+
+          <h2>Demo</h2>
+          <p>A quick recording of our simulation.</p>
+          <div class="ds-video-wrap" style="margin-bottom:24px;">
+            <iframe src="https://www.youtube.com/embed/mK3SZqt2rj0" title="Mapping Fires Demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+
+          <p>
+            Perimeter coverage is highly dependent on the number of drones. With fewer drones, perimeter updates
+            are slower and the gap between new and old boundaries grows larger.
+          </p>
+          <div class="ds-video-wrap" style="margin-bottom:32px;">
+            <iframe src="https://www.youtube.com/embed/D_sKyF3Gnh8" title="Mapping Fires — Drone Count Comparison"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+
+          <h2>Design and Implementation</h2>
+
+          <h3>Environment</h3>
+          <p>
+            The simulation is a 2D grid-world representing land viewed from above. Each cell is labelled
+            whether it is on fire and whether a drone is above it. Fire spread is modelled as an ellipse
+            whose eccentricity is determined by wind speed, assuming flat terrain and north-bound wind. Drones
+            are equipped with simulated infrared cameras that can perceive 9 grid boxes — their current cell
+            and all adjacent cells.
+          </p>
+
+          <h3>Simulation</h3>
+          <p>
+            Each simulation starts with some contiguous grid squares already on fire. Drones spawn at random
+            edges of the bounding box and search for the fire. Once detected, the system enters a mapping stage:
+            remaining drones move to the detection point and navigate the fire perimeter, continuously updating
+            their mapping as the fire spreads.
+          </p>
+
+          <h3>Fire Model</h3>
+          <p>
+            Fire shape and rate of spread depends on temperature, fuel, wind, and terrain slope. We model fire
+            spread as an ellipse whose eccentricity scales with wind speed. The stronger the wind, the more
+            elongated the spread.
+          </p>
+
+          <h3>Algorithm</h3>
+          <p>
+            The swarm uses a centralised architecture: each drone communicates to a central controller, which
+            provides high-level coordination instructions. Individual drones apply their own local logic for
+            problems specific to themselves.
+          </p>
+
+          <h2>Metrics</h2>
+          <p>
+            <strong>Percent Perimeter Detected</strong> — the share of the fire's actual perimeter detected
+            by drones. <strong>Percent Perimeter Detected (soft)</strong> adds flexibility, also counting
+            adjacent detections. <strong>Drone Efficiencies</strong> maps each drone's ID to the percentage
+            of total fires it discovered. <strong>ROS Estimate</strong> gives the drone-estimated rate of
+            spread at the right, left, head, and rear flanks, compared against the ground-truth Actual ROS.
+          </p>
+
+          <h2>Results</h2>
+          <p>
+            We found that increasing the number of drones reduces the average standard deviation in drone
+            efficiencies — contrary to our expectation that more drones would cause increased clustering
+            and wasted effort. This suggests our path-planning algorithm may need tuning at lower drone counts.
+          </p>
+
+          <figure>
+            <div class="row g-2">
+              <div class="col-12 col-sm-4"><img src="assets/images/csci513/graph1.png" alt="Graph 1"></div>
+              <div class="col-12 col-sm-4"><img src="assets/images/csci513/graph2.png" alt="Graph 2"></div>
+              <div class="col-12 col-sm-4"><img src="assets/images/csci513/avg_se.jpg" alt="Average Standard Error"></div>
+            </div>
+          </figure>
+
+          <h2>Resources</h2>
+          <p>
+            The code is available at this
+            <a href="https://colab.research.google.com/drive/1yr52nDKw7F2WWl8TGV_VeZI8IRUqRAZ1?usp=sharing" target="_blank">Colab notebook</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="ds-footer">
+    <div class="container">
+      <span class="ds-footer-eyebrow">Get in touch</span>
+      <h2 class="ds-footer-heading">Ready to talk?</h2>
+      <p class="ds-footer-sub">Feel free to reach out anytime.</p>
+      <div class="ds-footer-links">
+        <a href="mailto:bernard.rohit@gmail.com"><i class="ri-mail-line"></i> bernard.rohit@gmail.com</a>
+        <a href="tel:213-551-4359"><i class="ri-phone-line"></i> (213) 551-4359</a>
+      </div>
+      <a href="mailto:bernard.rohit@gmail.com" class="btn-primary">Let's Talk</a>
+      <hr class="ds-footer-divider">
+      <p class="ds-copyright">© 2025 Rohit Bernard</p>
     </div>
   </footer>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-    <script src="assets/js/main.js"></script>
-    <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
